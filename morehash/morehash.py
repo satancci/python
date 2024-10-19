@@ -59,8 +59,3 @@ def hash_a4a(caminho, space = False):
         return newprint(f'O caminho {fore_cyan(caminho)} não existe ou não é uma pasta', 'Verifique se o caminho está correto ou se é, de fato, uma pasta')
     except Exception as e:
         return print(f"    {Back.RED} Erro inesperado: {e}. {Back.RESET}")
-
-if __name__ == '__main__':
-    print(f'hash do arquivo: {hash_arquivo("/home/satancci/Documents/python/sha/teste/teste01.txt")}')
-    print(f'hash da pasta: {hash_pasta("/home/satancci/Documents/python/sha/teste")}')
-    hash_a4a("/home/satancci/Documents/python/sha/teste")
